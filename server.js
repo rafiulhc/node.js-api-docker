@@ -5,7 +5,8 @@ const url = require('url');
 
 
 const server = http.createServer((req, res) => {
-    res.end("<h1>Hello World</h1>");
+    res.write("<h1>Hello World</h1>");
+    res.end();
 })
 
-server.listen(3001);
+server.listen(3000);
